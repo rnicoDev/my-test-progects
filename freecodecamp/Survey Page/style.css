@@ -1,0 +1,127 @@
+body {
+    background-image: url('images/78166-1.jpg');
+    background-size: center;
+    background-repeat: no-repeat;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    text-shadow: 3px 4px black;
+}
+
+#description {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#survey-form {
+    background: rgba(0, 0, 0, .4);
+    border: 2px solid black;
+    width: 500px;
+    margin: 0 auto;
+    color: rgb(231, 226, 226);
+    font-size: 20px;
+    padding:10px;
+}
+
+#survey-form .inputs {
+    width: 75%;
+    margin-right: 15px;
+}
+
+
+#survey-form .firstLab {
+    
+    display: inline-block;
+    width: 70px;
+}
+
+#radiobtn {
+    display: flex;
+    margin: 5px 0px 5px 0px;
+    justify-content: center;
+}
+
+#radiobtn [type='radio'] {
+    display: inline-block;
+    width: 20px;
+}
+
+#radiobtn [type='radio'] .btn {
+    float: right;
+}
+
+#radiobtn label{
+    color:white
+}
+
+.dpd {
+    margin-top: 5px;
+    padding:5px 10px 5px 10px;
+    text-align: center;
+}
+
+.com {
+    padding: 20px 30px 30px 35px;
+}
+#dropdown-label,
+#name-label,
+#email-label,
+#number-label,
+#gender-label,
+p {
+    font-size: 20px
+}
+
+#rabbit-list {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;  
+}
+
+#rabbit-list [type='checkbox'] {
+    margin: 0 ;
+}
+
+
+input:invalid {
+    border: 5px solid blue;
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+@media(max-width:366px){
+    #survey-form{
+        background-color: rgba(0, 0, 0, 0.788);
+        width: 100%;
+    }
+    textarea{
+        width:100%;
+    }
+    #description{
+        font-size: 14px;
+        color: black;
+        font-weight: bolder;
+    }
+}
+ @media(min-width:367px) and (max-width:536px){
+    #survey-form{
+        background-color: rgba(0, 0, 0, 0.788);
+        width: 100%;
+    }
+    textarea{
+        width:100%;
+    }
+    #description{
+        font-size: 14px;
+        color: black;
+        font-weight: bolder;
+    }
+ }

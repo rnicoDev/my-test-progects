@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <script src="https://kit.fontawesome.com/56e0e344e7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+            
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="container-nav"> 
+            <ul>
+                <ul>
+                    <a href="http://google.com"> <img src="images\file-google-logo-svg-wikimedia-commons-23.png" alt="Google Image" id="top-logo"></a>
+                <li><a href="index.html">Search</a></li>
+                <li><a href="imageSearch.html">Images</a></li>
+            </ul>
+        </nav>
+        <h2 class="title">Advanced Search</h2>
+        <div class="container-advSearch"> 
+            <h4>Find pages with...</h4>
+            <form action="https://google.com/search" id="adv-form">
+                
+                <div class="form-labels row">
+                <label for="one">all these words:</label>
+                <label for="two">this exact word or phrase:</label>
+                <label for="three">any of these words:</label>
+                <label for="four">none of these words:</label>
+                </div>
+
+                <div class="form-inputs">
+                <input type="text"name="q" id="one" class="boxes">
+                <input type="text"name="q" id="two" class="boxes">
+                <input type="text"name="q" id="three" class="boxes">
+               <input type="text"name="q" id="four" class="boxes">
+               </div>  
+            </form>   
+        </div>
+        
+    </body>
+</html>

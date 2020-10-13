@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+backround-color: black;
+  background: url('images/wp2465939.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1 {
+  color: white;
+}
+
+.main {
+  background-color: #ccc;
+  width: 400px;
+  height: 175px;
+  margin: 100px 200px;
+  position: relative;
+  padding: 30px;
+  border: 7px solid darkgrey;
+  border-radius: 4px;
+}
+.badge {
+  width: 65px;
+  background: yellowgreen;
+  color: black;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  position:absolute;
+  top: 0;
+  left: 40%;
+}
+.clock {
+  background: #ebebeb;
+  text-align: center;
+  font-size: 50px;
+  font-family: orbitron;
+  height: 100%;
+  padding-top: 15px;
+  border: 7px solid yellowgreen ;
+  border-radius: 5px;
+}
