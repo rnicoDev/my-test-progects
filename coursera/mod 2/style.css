@@ -27,23 +27,23 @@ h1{
  }
  .box p{
     padding-top: 40px;
-     
+     color:rgb(14, 13, 13)
  }
 
 #box1{
-    background-color: darkkhaki;
+    background-color: rgb(238, 232, 145);
     padding: 10px; 
     position: relative;
     
 }
 
 #box2{
-    background-color:  darkolivegreen;
+    background-color:  rgb(208, 235, 162);
     padding: 10px;
     position: relative;
 }
 #box3{
-    background-color: darkcyan;
+    background-color: rgb(150, 221, 221);
     padding: 10px;
     position: relative; 
 }
@@ -62,7 +62,7 @@ h1{
     background: honeydew;
 }
 #label3{
-    background:rgb(148, 148, 231)
+    background:rgb(167, 167, 238)
 }
 #foot {
     text-align: center;
