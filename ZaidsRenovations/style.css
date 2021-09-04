@@ -27,3 +27,9 @@ body.poster {
     color: #fffdfd;
    
 }
+
+@media (max-width:652) {
+    .contact-text{
+        display:block;
+    }  
+}

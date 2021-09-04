@@ -86,7 +86,7 @@ body {
   height: 100vh;
   color: cornsilk;
   background-color: white;
-  background-image: url("./image/background_3.jpg");
+  background-image: url("./assets/image/background_3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   box-shadow: var(--shadow1);
