@@ -145,11 +145,15 @@ body {
   padding: 1rem;
   list-style: none;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items:center
 }
 
 .box ul li {
   padding: 1rem;
   text-align: center;
+  
 }
 
 .box ul li a {
@@ -187,13 +191,19 @@ body {
 }
 
 .boxes-4 {
+  display:block;
   background: var(--primary);
   border: 2px solid rgb(87, 85, 85);
   box-shadow: var(--shadow1);
-  width: 230px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2rem;
 }
 
+.proj-box{
+  box-sizing: border-box;
+}
 .boxes-5 {
   background: var(--primary);
   border: 2px solid rgb(87, 85, 85);
