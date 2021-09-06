@@ -5,11 +5,19 @@
 }
 
 body {
-backround-color: black;
+  overflow-x: hidden;
+  display: flex;
+  height:100vh;
+  width:100vw;
   background: url('images/wp2465939.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-
+  background-size: contain;
+  background-color: black;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -20,11 +28,9 @@ h1 {
   background-color: #ccc;
   width: 400px;
   height: 175px;
-  margin: 100px 200px;
+  margin: 100px auto;
   position: relative;
   padding: 30px;
-  border: 7px solid darkgrey;
-  border-radius: 4px;
 }
 .badge {
   width: 65px;
@@ -38,12 +44,21 @@ h1 {
   left: 40%;
 }
 .clock {
+  display: flex;
   background: #ebebeb;
   text-align: center;
   font-size: 50px;
   font-family: orbitron;
   height: 100%;
-  padding-top: 15px;
+  width:100%;
+  padding: 25px;
+  padding-bottom: 20px; 
   border: 7px solid yellowgreen ;
   border-radius: 5px;
 }
+ h1{
+   display:flex;
+   text-align: center;
+   margin-top:1em;
+   margin-left: 1em;
+ }
