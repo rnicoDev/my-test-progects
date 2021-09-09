@@ -31,7 +31,7 @@ h1 {
 
 #me-pic {
     border-radius: 50%;
-    width: 16em;
+    width: 5em;
     box-shadow: var(--shadow);
 }
 
@@ -41,7 +41,7 @@ h1 {
 }
 
 #projects {
-    height: 100vh;
+    
     margin: 5rem auto;
     padding-top: 3rem;
 }
