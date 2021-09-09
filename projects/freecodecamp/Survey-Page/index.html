@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bugs Bunny</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1 id="title">Bugs Bunny Survey Page</h1>
+            <p id="description">Making Bugs a better bunny for the new world . <br> Tell us what you think</p>
+                    <form id="survey-form">
+                        <label class="firstLab" id="name-label" for="name">Name:</label>
+                        <input class="inputs" id="name" type="text" placeholder="Enter Name" required>                        
+                        <br>
+                        <label class="firstLab" id="email-label" for="email" >Email:</label>
+                        <input class="inputs" id="email" type="email" placeholder="Enter Email" required>                       
+                        <br>
+                        <label class="firstLab" id="number-label"  for="number">Age:</label>
+                        <input class="inputs" id="number" type="number" placeholder="Enter Age" min="1" max="100" required>
+                        <br>
+                        <br>
+                        <div id="radiobtn">
+                            
+                                <input type="radio" name="gender" value="male">
+                                <label class="btn" for="male">Male</label>
+                                
+                            <br>
+                            
+                                <input type="radio" name="gender" value="female">
+                                 <label class="btn" for="female">Female</label>
+                            <br>
+                            
+                                <input type="radio" name="gender" value="other">
+                                 <label class="btn" for="other">Other</label>
+                            <br> 
+                        </div>
+                        <br>
+                        <br>
+                        <div class="dpd">
+                            <p id="dropdown-label">What should happen to Bugs next:</p>
+                            <br>
+                            <select id="dropdown" name="dropdown">
+                                <option value="">Select One …</option>
+                                <option value="marryG">Marries Lola Bunny</option>
+                                <option value="marryM">Marries Daffy Duck</option>
+                                <option value="pres">Runs for U.S. President</option>
+                                <option value="isis">Joins ISIS</option>
+                                <option value="killed">Elma Fudd wacks Bugs Bunny</option>
+                            </select>
+
+                        </div>
+                        <div id="rabbit-list">
+                            <p id="rabbits"> Whos your favorite rabbit :</p>
+                            <br>
+                            <label for="bugs"><input id="bugs" type="checkbox" name="hares" value="bugs"> Bugs
+                                Bunny</label>
+                            <label for="peter"><input id="peter" type="checkbox" name="hares" value="peter"> Peter
+                                Rabbit</label>
+                            <label for="thumper"><input id="thumper" type="checkbox" name="hares" value="thumper">
+                                Thumper</label>
+                            <label for="lola"><input id="lola" type="checkbox" name="hares" value="lola"> Lola
+                                Bunny</label>
+                            <label for="roger"><input id="roger" type="checkbox" name="hares" value="roger"> Roger
+                                Rabbit</label>
+                            <label for="energizer"><input id="energizer" type="checkbox" name="hares"
+                                    value="energizer">Energizer Bunny </label>
+                        </div>
+                        <div class="com">
+                            <textarea name="comment" rows="5" cols="32" maxlength="500"
+                                placeholder="Any suggestions for Bugs leave them here..." required></textarea>
+                        </div>
+                        <button id="submit" type="submit">Submit</button>
+                        
+                    </form>
+
+
+
+
+
+
+                    
+
+                </div>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>               
+                    
+</body>
+
+</html>

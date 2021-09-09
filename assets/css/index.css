@@ -27,6 +27,15 @@ body {
 
 h1 {
     color: var(--primary);
+    font-weight: bold;
+}
+
+.clip-text {
+    background: url(https://media3.giphy.com/media/gKa0wTfZh9A3zqBP3T/giphy.gif?cid=ecf05e473d2byvktuemh08hr9o2lfh6jupfj5yh8vij9dxpr&rid=giphy.gif&ct=g);
+    background-size: cover;
+    background-position:center;
+    -webkit-background-clip:text;
+    color: transparent;
 }
 
 #me-pic {
