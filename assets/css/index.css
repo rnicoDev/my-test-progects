@@ -5,11 +5,14 @@
     --shadow: 0 1px 5px rgba(248, 245, 245, 0.8);
     --shadow1: 0 1px 10px rgb(61, 60, 60);
 }
-html, body {
+
+html,
+body {
     overflow-x: hidden!important;
     width: auto!important;
 }
-body {   
+
+body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
@@ -27,14 +30,14 @@ body {
     height: 100vh;
 }
 
-h1 { 
-    color:transparent;
+h1 {
+    color: transparent;
     font-weight: 800;
-    font-size:4em;
-    background:url(https://media1.giphy.com/media/3otO6NFBIAFg2vPZuM/200.webp?cid=ecf05e47kwlhg5o6er1z5jbfvuqftcjpnaj9skkahmi0c5dx&rid=200.webp&ct=g);
-    background-size:cover;
-    background-position:center;
-    -webkit-background-clip:text;
+    font-size: 2.em;
+    background: url(https://media1.giphy.com/media/3otO6NFBIAFg2vPZuM/200.webp?cid=ecf05e47kwlhg5o6er1z5jbfvuqftcjpnaj9skkahmi0c5dx&rid=200.webp&ct=g);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
 }
 
 #me-pic {
@@ -45,27 +48,24 @@ h1 {
 
 .card {
     box-shadow: var(--shadow1);
-    margin: 0 auto;
 }
 
-#projects {   
+#projects {
     margin: 5rem auto;
     padding-top: 3rem;
 }
 
 #simp-proj {
-    max-height: 20rem;
     margin-top: 5rem;
-    padding-top: 0;
 }
 
 #about {
     height: 100vh;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
-#about h3, p {
-    padding-left: 3rem;
+#about h3,
+p {
 }
 
 #about-container {
@@ -91,16 +91,21 @@ h1 {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+}
