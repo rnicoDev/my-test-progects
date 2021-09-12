@@ -8,6 +8,10 @@
 //Importing Bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+body {
+    background:url('/assets/image/photo.webp');
+}
+
 #head-text {
     color: transparent;
     font-weight: 800;
@@ -27,6 +31,11 @@
     margin-right: calc(var(--bs-gutter-x)/ -2);
     margin-left: calc(var(--bs-gutter-x)/ -2);
     justify-content: space-between;
+}
+
+.project{
+    background: #b38a55;
+    border-radius: 15px;
 }
 
 .btn{
