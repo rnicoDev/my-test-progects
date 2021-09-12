@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+//Importing Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+#head-text {
+    color: transparent;
+    font-weight: 800;
+    font-size: 2em;
+    background: url(https://media1.giphy.com/media/3otO6NFBIAFg2vPZuM/200.webp?cid=ecf05e47kwlhg5o6er1z5jbfvuqftcjpnaj9skkahmi0c5dx&rid=200.webp&ct=g);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    justify-content: space-between;
+}
+
+.btn{
+    background:#52a5db;
+    border-radius: 20px;  
+}
+
+#about{
+    background:#b38a55
+}
+
+#quote{
+   color:#52a5db 
+}
+
+.title{
+    color:#964d05
+}
+
+a{
+    color:#52a5db
+}
