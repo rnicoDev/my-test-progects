@@ -27,10 +27,13 @@ body.poster {
     background-color: #1b0294; 
     justify-content:center; 
     align-items:center ; 
-    color: #fffdfd;
-   
+    color: #fffdfd;  
 }
 
+.images {
+    width:300px;
+    height:300px;
+}
 @media (max-width:652) {
     .contact-text{
         display:block;
