@@ -11,6 +11,11 @@ body.poster {
     background-attachment: fixed;
 }
 
+.contact-btn{
+    background-color: #C24900;
+    border:1px solid yellow ;
+}
+
 #moreText {
     display: none;
 }
