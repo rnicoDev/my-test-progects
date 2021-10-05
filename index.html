@@ -596,17 +596,17 @@
                                     <div class="col-lg-6 col-xl-5 py-3"> 
                                         <h3 class="fw-bold h4 mb-4 text-body text-uppercase">Send Us A message</h3>
 
-                                        <form action="mailto:rnico.dev@gmail.com" method="post" > 
+                                        <form action="mail.php" method="post" enctype=”multipart/form-data” >
                                             <div class="mb-3"> 
-                                                <input type="text" class="border border-0 form-control rounded-0" placeholder="Enter name..."> 
+                                                <input type="text" name="name" class="border border-0 form-control rounded-0" placeholder="Enter name..."> 
                                             </div>                                             
                                             <div class="mb-3"> 
-                                                <input type="email" class="border border-0 form-control rounded-0" placeholder="Enter email..."> 
+                                                <input type="email" name="email" class="border border-0 form-control rounded-0" placeholder="Enter email..."> 
                                             </div>                                             
                                             <div class="mb-3"> 
-                                                <textarea class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea> 
+                                                <textarea name="message"  class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea> 
                                             </div>                                             
-                                            <button type="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase">Submit</button>
+                                            <button type="submit" value="submit"  class="btn d-block w-100 btn-primary rounded-0 text-uppercase">Submit</button>
                                         </form> 
 
                                     </div>                                     
