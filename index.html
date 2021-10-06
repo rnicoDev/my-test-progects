@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -592,18 +593,25 @@
                                     <h2 class="fw-bold h4 mb-4 text-primary text-uppercase">RNICO WEB DEVELOPERS</h2>
                                     <div class="col col-lg-6 col-xl-5 py-3"> 
                                         <h3 class="fw-bold h4 mb-4 text-body text-uppercase">Send Us A message</h3>
-                                        <form action="mail.php" method="post" enctype="”multipart/form-data”">
+
+                                        
+                                        <form action="mail.php" method="post" >
                                             <div class="mb-3"> 
-                                                <input type="text" name="name" class="border border-0 form-control rounded-0" placeholder="Enter name..."> 
+                                                <input type="text" name="name" id="name" class="border border-0 form-control rounded-0" required  placeholder="Enter name..."> 
                                             </div>                                             
                                             <div class="mb-3"> 
-                                                <input type="email" name="email" class="border border-0 form-control rounded-0" placeholder="Enter email..."> 
-                                            </div>                                             
+                                                <input type="email" name="email" id="email" class="border border-0 form-control rounded-0" required placeholder="Enter email..."> 
+                                            </div>
                                             <div class="mb-3"> 
-                                                <textarea name="message" class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea> 
+                                                <input type="tel" name="Phone" id="Phone" class="border border-0 form-control rounded-0" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Enter phone...">
+                                                <small>Format: 123-456-7890</small> 
+                                            </div>                                                
+                                            <div class="mb-3"> 
+                                                <textarea name="message" id="message" class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea> 
                                             </div>                                             
                                             <button type="submit" value="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase">Submit</button>
-                                        </form>                                         
+                                        </form>
+
                                     </div>                                     
                                     <div class="col-lg-6 ms-auto py-3" style="text-align: center;"> 
                                         <ul style="list-style-type: none; text-transform: uppercase;" class="lh-lg list-unstyled"> 
