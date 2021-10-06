@@ -1,9 +1,9 @@
 html, body {
     width: auto!important; 
-    overflow-x: hidden!important
+    overflow-x: hidden!important;
 } 
 
-#head-text {
+#head-text,#main-btn {
     color: transparent;
     font-weight: 800;
     font-size: 2em;
@@ -11,16 +11,5 @@ html, body {
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
-}
-
-#main-btn{
-    color: transparent;
-    font-weight: 800;
-    font-size: 2em;
-    background: url(https://media1.giphy.com/media/3otO6NFBIAFg2vPZuM/200.webp?cid=ecf05e47kwlhg5o6er1z5jbfvuqftcjpnaj9skkahmi0c5dx&rid=200.webp&ct=g);
-    background-size: cover;
-    background-position: center;
-    -webkit-background-clip: text;
-    margin-top:1em;
 }
 
