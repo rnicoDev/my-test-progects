@@ -8,7 +8,12 @@ if(!empty($_POST["send"])) {
     $phone = $_POST["phone"];
     $subject = $_POST["subject"];
     $message = $_POST["message"];
-}
+
+
+require_once "vendor/phpmailer/phpmailer/src/PHPMailer.php";
+require_once "vendor/phpmailer/phpmailer/src/SMTP.php";
+require_once "vendor/phpmailer/phpmailer/src/Exception.php";
+
 require './vendor/autoload.php';
 
 //Create a new PHPMailer instance
@@ -55,5 +60,7 @@ if (!$mail->send()) {
     echo "Sorry something went wrong";
 } else {
     echo "Message sent! Thank , Someone will get back shortly";
+}
+exit(json_encode(array("status" => $status, "response" => $response)));
 }
 ?>
