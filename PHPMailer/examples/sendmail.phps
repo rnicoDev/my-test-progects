@@ -1,32 +1,22 @@
 <?php
 /**
- * This example shows sending a message using PHP's mail() function.
+ * This example shows sending a message using a local sendmail binary.
  */
-if (isset($_POST['sendflag'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
-}
-require './mail/PHPMailerAutoload.php';
+
+require '../PHPMailerAutoload.php';
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
-$mail->isSMTP();
-$mail->Host = 'rnico.dev';
-$mail->Port = 465;
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'tls';
-$mail->Username = "admin@rnico.dev";
-$mail->Password = "w8h-yu39LpJ:xxJ";
+// Set PHPMailer to use the sendmail transport
+$mail->isSendmail();
 //Set who the message is to be sent from
-$mail->setFrom('admin@rnico.dev', 'Richie');
+$mail->setFrom('from@example.com', 'First Last');
 //Set an alternative reply-to address
-$mail->addReplyTo('admin@rnico.dev');
+$mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
-$mail->addAddress('rnico.dev@gmail.com', 'John Doe');
+$mail->addAddress('whoto@example.com', 'John Doe');
 //Set the subject line
-$mail->Subject = 'PHPMailer mail() test';
+$mail->Subject = 'PHPMailer sendmail test';
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 $mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
