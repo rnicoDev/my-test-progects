@@ -3,5 +3,5 @@ function cleanForm(){
      document.getElementById('email').value='';
      document.getElementById('phone').value='';
      document.getElementById('message').value='';
-     
+     document.getElementById('subject').value='';
 }
