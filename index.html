@@ -595,7 +595,7 @@
                                         <h3 class="fw-bold h4 mb-4 text-body text-uppercase">Send Us A message</h3>
 
                                         
-                                        <form action="mail.php" name="contactForm" method="POST" enctype="multipart/form-data" id="formData">
+    <form name="contactForm" method="POST" enctype="multipart/form-data"  id="myForm">
       <div class="form-group" >
         <label>Name</label>
         <input type="text" class="form-control " name="name" id="name">
@@ -621,7 +621,7 @@
         <textarea class="form-control " name="message" id="message" rows="4"></textarea>
       </div>
 
-      <input type="submit" name="send" value="reset" onclick="cleanForm()" class="btn btn-dark btn-block">
+      <input type="submit" name="send" value="Submit" onclick="sendEmail()" class="btn btn-dark btn-block">
     </form>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
@@ -641,6 +641,7 @@
                        name: name.val(),
                        email: email.val(),
                        subject: subject.val(),
+                       phone: phone.val(),
                        body: body.val()
                    }, success: function (response) {
                         $('#myForm')[0].reset();
