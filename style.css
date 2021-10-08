@@ -18,3 +18,5 @@ html, body {
     font-weight: bolder;
     padding:4px 0;
 }
+
+form label{color:black}
