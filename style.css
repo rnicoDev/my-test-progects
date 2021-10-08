@@ -13,3 +13,8 @@ html, body {
     -webkit-background-clip: text;
 }
 
+#delivered {
+    color:red;
+    font-weight: bolder;
+    padding:4px 0;
+}

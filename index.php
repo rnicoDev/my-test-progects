@@ -2,29 +2,29 @@
 /**
  * This example shows sending a message using PHP's mail() function.
  */
-use "vendor\phpmailer\phpmailer\src\PHPMailer.php";
-use "vendor\phpmailer\phpmailer\src\SMTP.php";
-use "vendo\phpmailer\phpmailer\src\Exception.php";
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
 
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
 require './vendor/autoload.php';
 
-if(isset($_POST["send"])) {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $subject = $_POST["subject"];
-    $message = $_POST["message"];
+ $res = '';
+if (isset($_POST['send'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $body = "NAME: $name<br>EMAIL: $email<br>PHONE: $phone<br>SUBJECT: $subject<br>MSG: $message";
 
-    $res="";
-
-    
-
-       try{
-        $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+    try {
+        $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = 'rnico.dev';
-        $mail->Username = "admin@rnico.dev";
-        $mail->Password = "w8h-yu39LpJ:xxJ";
+        $mail->Username = 'admin@rnico.dev';
+        $mail->Password = 'w8h-yu39LpJ:xxJ';
         $mail->SMTPAuth = true;
         $mail->Port = 587;
         $mail->SMTPSecure = 'tls';
@@ -33,32 +33,17 @@ if(isset($_POST["send"])) {
         $mail->addAddress('rnico.dev@gmail.com', 'Richie');
         $mail->addAttachment('images/phpmailer_mini.png');
         $mail->isHTML(true);
-        $mail->Subject = "Contact Message";
-        $mail->Body ='
-    <html>
-    <body>
-    <h3>
-    <strong>Name:</strong> '.$name.' <br><br>
-    <strong>Phone:</strong> '.$phone.' <br><br>
-    <strong>Email:</strong> '.$email.' <br><br>
-    <strong>Msg:</strong> '.$message.' <br><br>
-    </h3>
-    </body
-    </html>';
-           $mail->AltBody = strip_tags($body);
-           $mail->send();
-           $res="Got IT !!";  
-    
-
-       }catch(Exception $e){
-           $res="Mail Sent Error: $mail->ErrorInfo"
-       };
+        $mail->Subject = 'Contact Message';
+        $mail->Body = $body;
+        $mail->AltBody = strip_tags($body);
+        $mail->send();
+        $res = 'Got IT !!';
+    } catch (Exception $e) {
+        $res = "Mail Sent Error: $mail->ErrorInfo";
+    }
 }
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1154,10 +1139,11 @@ if(isset($_POST["send"])) {
                                                 rows="4"></textarea>
                                         </div>
                                         <div>
-                                            <span><?php $res ?></span>
+                                            <span id="delivered"><?php echo $res; ?></span>
+                                            <br>
                                         <input type="submit" name="send" value="Submit" onclick="sendEmail()"
                                             class="btn btn-dark btn-block">
-                                        </div>    
+                                         </div>   
                                     </form>
                                 </div>
                                 
@@ -1217,50 +1203,8 @@ if(isset($_POST["send"])) {
     </footer>
     <script src="assets/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="form.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
-   <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-                                <script type="text/javascript">
-                                    function sendEmail() {
-                                        var name = $("#name");
-                                        var email = $("#email");
-                                        var subject = $("#subject");
-                                        var body = $("#body");
-                                        var phone = $("#phone");
-
-                                        if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) &&
-                                            isNotEmpty(body) && isNotEmpty(phone)) {
-                                            $.ajax({
-                                                url: 'mail.php',
-                                                method: 'POST',
-                                                dataType: 'json',
-                                                data: {
-                                                    name: name.val(),
-                                                    email: email.val(),
-                                                    subject: subject.val(),
-                                                    phone: phone.val(),
-                                                    body: body.val(),
-                                                },
-                                                success: function (response) {
-                                                    $('#myForm')[0].reset();
-                                                    $('.sent-notification').text(
-                                                        "Message Sent Successfully.");
-                                                }
-                                            });
-                                        }
-                                    }
-
-                                    function isNotEmpty(caller) {
-                                        if (caller.val() == "") {
-                                            caller.css('border', '1px solid red');
-                                            return false;
-                                        } else
-                                            caller.css('border', '');
-
-                                        return true;
-                                    }
-                                </script>-->
+    
 </body>
 
 </html>
